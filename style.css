@@ -53,6 +53,9 @@
   --s-64px: calc( 64 /16 *1rem);
   --s-36px: calc( 36 /16 *1rem);
   --s-56px: calc( 56 /16 * 1rem);
+  --s-44px: calc( 44 /16 * 1rem);
+  --s-80px: calc(var(--s-40px) + var(--s-40px));
+
   
 }
 }
@@ -63,7 +66,6 @@
     --fs-24px:calc(24 /16 * 1rem);
     --fs-18px:calc(18 /16 * 1rem);
     --fs-16px:calc(16 /16 * 1rem);
-    
     --fs-12px:calc(12 /16 * 1rem);
     --line-height-125: 1.25;
     --line-height-150:1.5;
@@ -157,6 +159,7 @@ header img{
   margin-top:var(--s-32px);
   border-radius: 20px;
   border: 0;
+  color: var(--purple-700)  ;
 }
 
 .container{
@@ -181,4 +184,24 @@ hgroup{
   gap: var(--s-16px);
   padding: 0 0 var(--s-40px) 0;
   flex-wrap: wrap;
+}
+
+
+@media(width>767px){
+  body{
+    font-size: var(--fs-18px);
+  }
+  .container{
+    margin: var(--s-40px)  var(--s-80px);
+  }
+  hgroup{
+    padding: var(--s-40px) var(--s-44px);
+  }
+  .title{
+    font-size: var(--fs-40px);
+  }
+  .btn-register{
+    margin-top: var(--s-40px);
+    padding: 0.9em 3.9em;
+  }
 }
