@@ -159,9 +159,13 @@ header img{
   margin-top:var(--s-32px);
   border-radius: 20px;
   border: 0;
-  color: var(--purple-700)  ;
+  color: var(--purple-700);
+  cursor: pointer;
 }
-
+.btn-register:hover{
+  background-color: var(--magenta-400);
+  color: var(--white);
+}
 .container{
   margin: var(--s-40px) var(--s-36px);
 }
@@ -185,8 +189,11 @@ hgroup{
   padding: 0 0 var(--s-40px) 0;
   flex-wrap: wrap;
 }
-
-
+ .social-icon:hover{
+  fill: var(--pink-400);
+  stroke: var(--pink-400);
+  stroke-width: 2px;
+ }
 @media(width>767px){
   body{
     font-size: var(--fs-18px);
