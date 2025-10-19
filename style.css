@@ -205,3 +205,28 @@ hgroup{
     padding: 0.9em 3.9em;
   }
 }
+
+
+@media(width>800px){
+  body{
+    background-image: url(images/bg-desktop.svg);
+  }
+  .container{
+    margin: var(--s-64px) 84px 43px;
+  }
+  .introduction{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:var(--s-56px);
+  } 
+
+  hgroup{
+    padding: 0;
+    text-align: left;
+    max-width: 520px;
+  }
+  .social-icons{
+    justify-content: end;
+    margin-right: 84px;
+  }
+}
