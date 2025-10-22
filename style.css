@@ -177,7 +177,7 @@ header img{
 .ilustration{
  padding: var(--s-64px) 0  var(--s-56px);
 }
-hgroup{
+.description{
  text-align: center;
 }
 .social-icons{
@@ -220,7 +220,7 @@ hgroup{
     margin-top: var(--s-40px);
     padding: 0.9em 3.9em;
   }
-}
+} 
 
 
 @media(width>800px){
